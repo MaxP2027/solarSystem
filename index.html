@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Solar System</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script> 
+    </head>
+    <body> 
+        <a-scene> 
+            <a-sky src="planet_textures/nightsky.jpg"> 
+                <a-sphere id="sun" position="0 1.25 -10" radius="3" src="planet_textures/sun.jpeg" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 22224"></a-sphere>
+                <a-sphere id="mercury" position="4 1.25 -10" radius=".1" src="planet_textures/mercury.jpeg" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 58650"></a-sphere>
+            </a-sky>
+        </a-scene>
+    </body>
+</html>
