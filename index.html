@@ -7,11 +7,66 @@
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script> 
     </head>
     <body> 
-        <a-scene> 
-            <a-sky src="planet_textures/nightsky.jpg"> 
-                <a-sphere id="sun" position="0 1.25 -10" radius="3" src="planet_textures/sun.jpeg" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 22224"></a-sphere>
-                <a-sphere id="mercury" position="4 1.25 -10" radius=".1" src="planet_textures/mercury.jpeg" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 58650"></a-sphere>
-            </a-sky>
+        <a-scene>
+            <a-sky src="planet_textures/nightsky.jpg"></a-sky>
+            <a-sphere id="sun" position="0 1.25 -10" radius="3" src="planet_textures/sun.jpeg"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 22224"></a-sphere>
+
+            <!-- Mercury Orbit -->
+            <a-entity id="mercury-orbit" position="0 1.25 -10"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 928">
+                <a-sphere id="mercury" position="4 0 0" radius="0.1" src="planet_textures/mercury.jpeg"
+                    animation="property: rotation; to: 0 360 0; loop: true; dur: 1875"></a-sphere>
+            </a-entity>
+
+            <!-- Venus Orbit -->
+            <a-entity id="venus-orbit" position="0 1.25 -10"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 2368">
+                <a-sphere id="venus" position="7.2 0 0" radius="0.2" src="planet_textures/venus.jpeg"
+                    animation="property: rotation; to: 0 360 0; loop: true; dur: 7776"></a-sphere>
+            </a-entity>
+
+            <!-- Earth Orbit -->
+            <a-entity id="earth-orbit" position="0 1.25 -10"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 3840">
+                <a-sphere id="earth" position="10 0 0" radius="0.25" src="planet_textures/earth.jpeg"
+                    animation="property: rotation; to: 0 360 0; loop: true; dur: 3200"></a-sphere>
+            </a-entity>
+
+            <!-- Mars Orbit -->
+            <a-entity id="mars-orbit" position="0 1.25 -10"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 6080">
+                <a-sphere id="mars" position="15 0 0" radius="0.15" src="planet_textures/mars.jpeg"
+                    animation="property: rotation; to: 0 360 0; loop: true; dur: 3386"></a-sphere>
+            </a-entity>
+
+            <!-- Jupiter Orbit -->
+            <a-entity id="jupiter-orbit" position="0 1.25 -10"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 15040">
+                <a-sphere id="jupiter" position="20 0 0" radius="0.7" src="planet_textures/jupiter.jpeg"
+                    animation="property: rotation; to: 0 360 0; loop: true; dur: 1322"></a-sphere>
+            </a-entity>
+
+            <!-- Saturn Orbit -->
+            <a-entity id="saturn-orbit" position="0 1.25 -10"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 34560">
+                <a-sphere id="saturn" position="25 0 0" radius="0.6" src="planet_textures/saturn.jpeg"
+                    animation="property: rotation; to: 0 360 0; loop: true; dur: 3440"></a-sphere>
+            </a-entity>
+
+            <!-- Uranus Orbit -->
+            <a-entity id="uranus-orbit" position="0 1.25 -10"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 98240">
+                <a-sphere id="uranus" position="30 0 0" radius="0.5" src="planet_textures/uranus.jpeg"
+                    animation="property: rotation; to: 0 360 0; loop: true; dur: 9811"></a-sphere>
+            </a-entity>
+
+            <!-- Neptune Orbit -->
+            <a-entity id="neptune-orbit" position="0 1.25 -10"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 192000">
+                <a-sphere id="neptune" position="35 0 0" radius="0.5" src="planet_textures/neptune.jpeg"
+                    animation="property: rotation; to: 0 360 0; loop: true; dur: 19270"></a-sphere>
+            </a-entity>
         </a-scene>
     </body>
 </html>
